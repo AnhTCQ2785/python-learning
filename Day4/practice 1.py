@@ -14,7 +14,7 @@ print(f"The movie '{new_movie[0]}' was released in {new_movie[2]}.")
 
 movies.append(new_movie)
 
-print("List of films: ")
+print("List of films: ")    
 for movie in movies:
     print(movie)
 print("List of films after update:")
