@@ -4,7 +4,6 @@ empty_set.add("apple")
 empty_set.add("banana")
 empty_set.add("orange")
 
-
 second_set = {"banana", "grape", "pineapple"}
 
 union_set = empty_set.union(second_set)
