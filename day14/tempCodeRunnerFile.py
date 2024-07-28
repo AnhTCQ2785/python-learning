@@ -16,7 +16,7 @@ def add_book(title, author, year, read):
 def retrieve_books():
     with open('books.csv', 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # Skip header
+        next(reader)  
         books = list(reader)
     
     if not books:
@@ -30,7 +30,7 @@ def retrieve_books():
 def search_book(title):
     with open('books.csv', 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # Skip header
+        next(reader)  
         for book in reader:
             if book[0].lower() == title.lower():
                 read_status = 'Read' if book[3] == 'yes' else 'Not read'
